@@ -1,0 +1,52 @@
+.pages-container {
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.wrapper-grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 750px;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+@media (max-width: 749px) {
+  .pages-container {
+    place-content: unset;
+  }
+}
+
+.banner-img {
+  position: absolute;
+  background-image: url(https://images.unsplash.com/photo-1582727657635-c771002bdada?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200px;
+}
+.profile-img {
+  width: 13rem;
+  height: 13rem;
+}
+.name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.description {
+  margin: 1rem 2rem;
+  font-size: 0.9rem;
+}
+.btn {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 1rem;
+  background-color: var(--clr-primary);
+}

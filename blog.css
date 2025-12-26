@@ -1,0 +1,88 @@
+.pages-container {
+  position: relative;
+  top: calc(45vh - 250px);
+
+.wrapper-grid {
+  display: grid;
+  flex-wrap: wrap;
+  max-width: 90vw;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  margin: auto;
+  justify-content: center;
+}
+
+.post {
+  text-align: justify;
+  margin: 0 10px;
+  /* width: 80vw; */
+}
+
+.post::after {
+  display: grid;
+  content: '***';
+  margin: 20px 10px;
+  justify-content: center;
+}
+
+.btn-round {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  background-image: URL('https://res.cloudinary.com/zenberry/image/upload/v1659934646/EPK/Blank_button_bjerck.svg');
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  width: 250px;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-round .text {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 40%;
+  /* Adjust this value to move the positioned div up and down */
+  font-family: Arial, sans-serif;
+  color: #fff;
+  width: 60%;
+  /* Set the width of the positioned div */
+}
+.banner-img {
+  position: absolute;
+  background-image: url(https://images.unsplash.com/photo-1582727657635-c771002bdada?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200px;
+}
+.profile-img {
+  width: 13rem;
+  height: 13rem;
+}
+.name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.description {
+  margin: 1rem 2rem;
+  font-size: 0.9rem;
+}
+.btn {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 1rem;
+  background-color: var(--clr-primary);
+}
+}

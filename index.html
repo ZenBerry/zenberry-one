@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>ZenBerry.</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" type="text/css" href="intro.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="u9c7i1f8HG06rQzv02PVK--uLlt-H1Lp1gcnKu6YKvQ" />
-  <script src="https://cdn.counter.dev/script.js" data-id="b60135a8-ec4d-4f44-84ac-a8044cf88983" data-utcoffset="2"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>ZenBerry.</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="intro.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="u9c7i1f8HG06rQzv02PVK--uLlt-H1Lp1gcnKu6YKvQ" />
+    <script src="https://cdn.counter.dev/script.js" data-id="b60135a8-ec4d-4f44-84ac-a8044cf88983"
+      data-utcoffset="2"></script>
+  </head>
 
-<body>
-  <div class="m-0">
-    <div class="pages-container">
-      <div class="header dot-big">
-        <h2 id="header">ZenBerry.</h2>
-      </div>
-      <div class="wrapper-grid">
-        <a class="plain" href="music.html">
-          <div ontouchstart="" class="btn-round">
-            <h2>Music</h2>
-          </div>
-        </a>
-        <a class="plain" href="coding.html">
-          <div ontouchstart="" class="btn-round">
-            <h2>Coding</h2>
-          </div>
-        </a>
-        <div ontouchstart="" class="btn-round" onclick="showAbout();">
-          <h2>About</h2>
+  <body>
+    <div class="m-0">
+      <div class="pages-container">
+        <div class="header dot-big">
+          <h2 id="header">ZenBerry.</h2>
         </div>
-        <a class="plain" href="blog.html">
-          <div ontouchstart="" class="btn-round">
-            <h2>Blog</h2>
+        <div class="wrapper-grid">
+          <a class="plain" href="music.html">
+            <div ontouchstart="" class="btn-round">
+              <h2>Music</h2>
+            </div>
+          </a>
+          <a class="plain" href="coding.html">
+            <div ontouchstart="" class="btn-round">
+              <h2>Coding</h2>
+            </div>
+          </a>
+          <div ontouchstart="" class="btn-round" onclick="showAbout();">
+            <h2>About</h2>
           </div>
-        </a>
-        <a class="plain" href="https://www.paypal.com/donate/?hosted_button_id=FFKFLHHHDHK2Y" target="_blank">
-          <div ontouchstart="" class="btn-round">
-            <h2>Love</h2>
+          <a class="plain" href="blog.html">
+            <div ontouchstart="" class="btn-round">
+              <h2>Blog</h2>
+            </div>
+          </a>
+          <a class="plain" href="https://www.paypal.com/donate/?hosted_button_id=FFKFLHHHDHK2Y" target="_blank">
+            <div ontouchstart="" class="btn-round">
+              <h2>Love</h2>
+            </div>
+          </a>
+          <div ontouchstart="" onclick="showEmail();" class="btn-round">
+            <h2>Contact</h2>
           </div>
-        </a>
-        <div ontouchstart="" onclick="showEmail();" class="btn-round">
-          <h2>Contact</h2>
         </div>
       </div>
     </div>
-  </div>
-  <script>
-    console.log('hello! v5');
-    history.pushState(null, '', '/');
-    function showEmail() {
-        document.getElementById("header").innerText = "ZenBerry.music@gmail.com";
-        setTimeout(function() {
-          document.getElementById("header").innerText = "ZenBerry.";
-        }, 10000);
-    }
-    function showAbout() {
-        document.getElementById("header").innerText = "Protecting silence.";
-        setTimeout(function() {
-          document.getElementById("header").innerText = "ZenBerry.";
-        }, 1000);
-    }
-  </script>
-</body>
+    <script>
+      console.log( 'hello! v7' );
+      history.pushState( null, '', '/' );
+      function showEmail() {
+        document.getElementById( "header" ).innerText = "ZenBerry.music@gmail.com";
+        setTimeout( function () {
+          document.getElementById( "header" ).innerText = "ZenBerry.";
+        }, 10000 );
+      }
+      function showAbout() {
+        document.getElementById( "header" ).innerText = "Protecting silence.";
+        setTimeout( function () {
+          document.getElementById( "header" ).innerText = "ZenBerry.";
+        }, 1000 );
+      }
+    </script>
+  </body>
+
 </html>

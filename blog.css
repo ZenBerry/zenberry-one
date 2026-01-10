@@ -7,7 +7,6 @@
     flex-wrap: wrap;
     max-width: 90vw;
     width: 90%;
-    margin-top: 20vh;
     margin-bottom: 20vh;
     margin-left: auto;
     margin-right: auto;
@@ -92,7 +91,7 @@
 @media screen and (max-width: 600px) {
   .wrapper-grid {
     width: 90% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
   }
 }

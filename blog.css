@@ -88,3 +88,11 @@
     background-color: var(--clr-primary);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .wrapper-grid {
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}

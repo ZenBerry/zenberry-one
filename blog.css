@@ -19,10 +19,10 @@
 }
 
 .post::after {
-  display: grid;
+  display: block;
   content: '***';
+  text-align: center; /* centers text horizontally */
   margin: 20px 10px;
-  justify-content: center;
 }
 
 .btn-round {

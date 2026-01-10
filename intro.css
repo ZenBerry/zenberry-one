@@ -55,7 +55,7 @@
 @media screen and (max-width: 600px) {
   .wrapper-grid {
     width: 90% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
   }
 }

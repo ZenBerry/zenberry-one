@@ -99,7 +99,7 @@
               return response.ok ? response.json() : null;
             } )
             .then( function ( result ) {
-              if ( result && result.status === 404 && !link.textContent.includes( offlineText ) ) {
+              if ( result && ( result.status === 0 || result.status >= 400 ) && !link.textContent.includes( offlineText ) ) {
                 link.textContent += offlineText;
               }
             } )

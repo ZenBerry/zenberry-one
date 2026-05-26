@@ -88,6 +88,25 @@
 
         </div>
       </div>
+    <script>
+      ( function () {
+        var offlineText = " (server offline)";
+        var links = Array.from( document.querySelectorAll( "a[href]" ) );
+
+        links.forEach( function ( link ) {
+          fetch( "/.netlify/functions/check-link?url=" + encodeURIComponent( link.href ) )
+            .then( function ( response ) {
+              return response.ok ? response.json() : null;
+            } )
+            .then( function ( result ) {
+              if ( result && result.status === 404 && !link.textContent.includes( offlineText ) ) {
+                link.textContent += offlineText;
+              }
+            } )
+            .catch( function () {} );
+        } );
+      }() );
+    </script>
   </body>
 
 </html>
